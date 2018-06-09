@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChannelMessaging</string>
+    <string name="dialogMessageAddFriend">Voulez vous vraiment ajouter cet utilisateur à votre liste d\'amis ?</string>
+    <string name="dialogMessageAddFriendTitle">Ajouter un ami</string>
+    <string name="ok">Oui</string>
+    <string name="cancel">Non</string>
+    <string name="login">Identifiant</string>
+    <string name="mdp">Password</string>
+</resources>

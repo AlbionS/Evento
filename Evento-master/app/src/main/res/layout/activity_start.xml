@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ick.evento.startActivity">
+
+
+
+    <ImageView
+        android:id="@+id/startActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/start" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/vija_ndarese"
+            android:src="@drawable/vija_ndarese"
+           android:layout_marginTop="200dp"
+            android:layout_marginLeft="50dp"
+
+            />
+
+    <ImageView
+        android:id="@+id/perdoruesi_ikona"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/vija_ndarese"
+        android:layout_alignTop="@+id/vija_ndarese"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/perdoruesi_ikona" />
+    <ImageView
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+    android:src="@drawable/biznes_ikona"
+    android:id="@+id/biznes_ikona"
+    android:layout_alignTop="@+id/vija_ndarese"
+    android:layout_alignLeft="@+id/vija_ndarese"
+    android:layout_marginLeft="200dp"
+    android:layout_marginTop="150dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvProfili"
+        android:text="Zgjedh profilin e perdoruesit:"
+        android:textSize="23dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/antic_slab"
+        />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_blue_400"
+    android:weightSum="1">
+    <ImageView
+        android:id="@+id/mIvLogo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/channel_messaging_logo"
+        android:tint="@color/md_blue_900"
+        android:transitionName="logo" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes Amis"
+        android:backgroundTint="@color/md_green_A400"
+        android:id="@+id/buttonFriends"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:theme="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal"
+        android:foregroundTint="@android:color/darker_gray" />
+
+</LinearLayout>

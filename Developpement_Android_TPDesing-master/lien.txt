@@ -1,0 +1,4 @@
+http://damien.dabernat.fr/android/
+
+Kotlin (remplacera le JAVA)
+Swift (IOS) faire du Back,Font

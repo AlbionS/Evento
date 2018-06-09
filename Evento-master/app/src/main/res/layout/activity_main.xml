@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu"
+        app:headerLayout="@layout/navigation_header"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/lightGrey"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/etPromoted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promoted events go here" />
+
+        <!-- START Pjesa "Promoted" -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <!-- END Pjesa "Promoted" -->
+
+        <!-- START Pjesa "Categories" -->
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <View
+                android:id="@+id/centerVerticalShim"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/centerHorizontalShim"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_Music"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/centerVerticalShim"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/centerHorizontalShim"
+                android:background="#ffffff"
+                android:contentDescription="@string/category_music"
+                android:gravity="center"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_music">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imgBtn_Sport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/centerVerticalShim"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/centerHorizontalShim"
+                android:background="#ffffff"
+                android:contentDescription="@string/category_sports"
+                android:gravity="center"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_sports">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imgBtn_Business"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/centerVerticalShim"
+                android:layout_toStartOf="@+id/centerHorizontalShim"
+                android:background="#ffffff"
+                android:contentDescription="@string/category_business"
+                android:gravity="center"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_business">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imgBtn_Theatre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/centerVerticalShim"
+                android:layout_toEndOf="@+id/centerHorizontalShim"
+                android:background="#ffffff"
+                android:contentDescription="@string/category_theater"
+                android:gravity="center"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_theatre">
+
+            </ImageButton>
+
+        </RelativeLayout>
+
+        <!-- END Pjesa "Categories" -->
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
